@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python figur.py)",
+      "Bash(python -c \"import pandas as pd; df = pd.read_excel\\('Alle_ZirkonPrøver_Ratios.xlsx', sheet_name=None\\); [print\\(k, v.shape, list\\(v.columns\\)[:15]\\) for k,v in df.items\\(\\)]\")",
+      "Bash(python -m pip install pandas openpyxl)",
+      "PowerShell(python -c \"import pandas as pd; xl = pd.ExcelFile\\('Alle_ZirkonPr�ver_Ratios.xlsx'\\); print\\(xl.sheet_names\\)\")",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_excel\\('Alle_ZirkonPr�ver_Ratios.xlsx'\\); print\\(df.shape\\); print\\(df.columns.tolist\\(\\)\\); print\\(df.head\\(3\\).to_string\\(\\)\\)\")",
+      "PowerShell(Get-Command Rscript -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command R -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\R\" -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\Program Files \\(x86\\)\\\\R\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\\\\R\" -ErrorAction SilentlyContinue)",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"cat\\(R.version.string\\)\")",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"cat\\(requireNamespace\\('IsoplotR', quietly=TRUE\\)\\)\")",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"install.packages\\('IsoplotR', repos='https://cloud.r-project.org'\\)\")",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"library\\(IsoplotR\\); cat\\(packageVersion\\('IsoplotR'\\)\\)\")",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"suppressWarnings\\(library\\(IsoplotR\\)\\); print\\(packageVersion\\('IsoplotR'\\)\\)\")",
+      "PowerShell(python Concordia_plots.py)",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"suppressWarnings\\(library\\(IsoplotR\\)\\); print\\(args\\(concordia\\)\\)\")",
+      "Bash(python \"RiktigRekkefølge.py\")"
+    ]
+  }
+}
