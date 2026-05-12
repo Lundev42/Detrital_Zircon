@@ -16,7 +16,9 @@
       "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"suppressWarnings\\(library\\(IsoplotR\\)\\); print\\(packageVersion\\('IsoplotR'\\)\\)\")",
       "PowerShell(python Concordia_plots.py)",
       "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" -e \"suppressWarnings\\(library\\(IsoplotR\\)\\); print\\(args\\(concordia\\)\\)\")",
-      "Bash(python \"RiktigRekkefølge.py\")"
+      "Bash(python \"RiktigRekkefølge.py\")",
+      "Bash(ls \"C:/Users/vetle/OneDrive - Høgskulen på Vestlandet/7. Bachelor/Zirkondatering/\" | grep -i \"isoplotr_claude\")",
+      "Read(//c/Users/vetle/OneDrive - Høgskulen på Vestlandet/7. Bachelor/Zirkondatering/**)"
     ]
   }
 }
